@@ -3,11 +3,12 @@ import pandas as pd
 import pickle
 import os
 
+
 # Load models
-with open(os.path.join("model", "disease_encoder.pkl"), "rb") as f:
+with open(os.path.join("Model", "disease_encoder.pkl"), "rb") as f:
     disease_encoder = pickle.load(f)
 
-with open(os.path.join("model", "xgb_pipeline.pkl"), "rb") as f:
+with open(os.path.join("Model", "xgb_pipeline.pkl"), "rb") as f:
     xgb_pipeline = pickle.load(f)
 
 st.set_page_config(page_title="Disease Prediction System", layout="centered")
